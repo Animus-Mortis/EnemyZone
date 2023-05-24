@@ -15,7 +15,7 @@ namespace Game.Bullet
             target = newTarget;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if(Vector3.Distance(transform.position, target.transform.position) > 0.1f && !target.GetComponent<HealthBot>().died)
             {
